@@ -1,13 +1,20 @@
+//<html>
+//	<head>click event generate</head>
+//	<body>
+//		<a id="testGoogleSearch" href="https://www.allbirds.co.kr/products/mens-tree-dashers-1-geyser?variant=32302754857009&gclid=EAIaIQobChMI35bP8Y3c-gIVV62WCh1SgARSEAQYASABEgIHHvD_BwE"> Google search result page 이동</a><br/>
+//	<script>
+//		var ShoesLink = document.getElementById('testGoogleSearch');
+//		var event = document.createEvent("MouseEvent");
+//		//var event = document.createEvent("TouchEvent");
+//		event.initEvent("click",false,true);
+//		ShoesLink.dispatchEvent(event);
+//	</script>
+//	</body>
+//</html>
+
 <html>
 	<head>click event generate</head>
-	<body>
+	<body onload="document.getElementById('testGoogleSearch').click()">
 		<a id="testGoogleSearch" href="https://www.allbirds.co.kr/products/mens-tree-dashers-1-geyser?variant=32302754857009&gclid=EAIaIQobChMI35bP8Y3c-gIVV62WCh1SgARSEAQYASABEgIHHvD_BwE"> Google search result page 이동</a><br/>
-	<script>
-		var ShoesLink = document.getElementById('testGoogleSearch');
-		var event = document.createEvent("MouseEvent");
-		//var event = document.createEvent("TouchEvent");
-		event.initEvent("click",false,true);
-		ShoesLink.dispatchEvent(event);
-	</script>
 	</body>
 </html>
