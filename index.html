@@ -1,16 +1,13 @@
 <html>
+	<head>click event generate</head>
 	<body>
-		<a id="myATag" href="https://www.allbirds.co.kr/products/mens-tree-dashers-1-geyser?variant=32302754857009&gclid=EAIaIQobChMI35bP8Y3c-gIVV62WCh1SgARSEAQYASABEgIHHvD_BwE"> Go To google search com </a>
-	</body>
-
+		<a id="testGoogleSearch" href="https://www.prada.com/kr/ko/men/shoes/loafers/products.Chocolate_Sharp_brushed_leather_pointed_loafers.2DE131_055_F0002.html?utm_source=Google&utm_medium=CPC&utm_campaign=GoogleShopping_KR&utm_content=PLA_Prada&gclid=EAIaIQobChMI_r2L2t3c-gIVClZgCh3crAzJEAQYAyABEgIgfPD_BwE"> Google search result page 이동</a><br/>
 	<script>
-		const myTimeout = setTimeout(myClickFunction, 3000);
-
-		function myClickFunction(event) {
-		  const ev = document.createEvent("MouseEvent");
-		  ev.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-
-		  document.getElementById("myATag").dispatchEvent(ev);
-		}
+		var ShoesLink = document.getElementById('testGoogleSearch');
+		var event = document.createEvent("MouseEvent");
+		event.initEvent("click",false,true);
+		ShoesLink.dispatchEvent(event);
 	</script>
+
+	</body>
 </html>
