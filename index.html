@@ -1,5 +1,14 @@
-<head>
-</head>
-<body>
-Test
-</body>
+<html>
+	<head>click event generate</head>
+	<body>
+		<a id="testNaver" href="https://www.naver.com"> Naver.com 이동</a><br/>
+	
+	<script>
+		var naverLink = document.getElementById('testNaver');
+		var event = document.createEvent("MouseEvent");
+		event.initEvent("click",false,true);
+		naverLink.dispatchEvent(event);
+	</script>
+	
+	</body>
+</html>
