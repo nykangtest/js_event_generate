@@ -1,14 +1,12 @@
 <html>
 	<head>click event generate</head>
 	<body>
-		<a id="testNaver" href="https://www.naver.com"> Naver.com 이동</a><br/>
-	
+		<a id="testGoogleSearch" href="https://www.allbirds.co.kr/products/mens-tree-dashers-1-geyser?variant=32302754857009&gclid=EAIaIQobChMI35bP8Y3c-gIVV62WCh1SgARSEAQYASABEgIHHvD_BwE"> Google search result page 이동</a><br/>
 	<script>
-		var naverLink = document.getElementById('testNaver');
+		var ShoesLink = document.getElementById('testGoogleSearch');
 		var event = document.createEvent("MouseEvent");
 		event.initEvent("click",false,true);
-		naverLink.dispatchEvent(event);
+		ShoesLink.dispatchEvent(event);
 	</script>
-	
 	</body>
 </html>
